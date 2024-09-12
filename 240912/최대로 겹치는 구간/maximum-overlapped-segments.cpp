@@ -5,7 +5,7 @@ int main() {
     int n;
     cin >> n;
     int offset{ 100 };
-    int arr[200]{ 0 };
+    int arr[200]{ 0, };
     for (int i{ 0 }; i < n; i++) {
         int a, b;
         cin >> a >> b;
