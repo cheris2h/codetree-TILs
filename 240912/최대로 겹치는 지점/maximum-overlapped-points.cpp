@@ -25,7 +25,7 @@ int main() {
     int max_index{ 0 };
 
     // 가장 많이 체크된 구간 찾기
-    for (int i{ 0 }; i <= MAX; i++) {
+    for (int i{ 0 }; i < MAX; i++) {
         if (checked[i] > max) {
             max = checked[i];
             max_index = i;
@@ -33,5 +33,5 @@ int main() {
     }
 
     // 가장 많이 체크된 구간 출력
-    cout << max+1;
+    cout << max;
 }
