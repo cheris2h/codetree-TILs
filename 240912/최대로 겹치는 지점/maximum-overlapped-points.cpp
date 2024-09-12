@@ -2,7 +2,7 @@
 using namespace std;
 
 #define OFFSET 100
-#define MAX 100
+#define MAX 101
 
 int checked[MAX + 1]{ 0 };  // 배열 크기를 MAX + 1로 설정
 
