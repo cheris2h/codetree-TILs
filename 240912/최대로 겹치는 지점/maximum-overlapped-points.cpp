@@ -32,7 +32,6 @@ int main() {
             max_index = i;
         }
     }
-
     // 가장 많이 체크된 구간 출력
     cout << max;
 }
