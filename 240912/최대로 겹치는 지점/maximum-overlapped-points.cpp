@@ -16,19 +16,17 @@ int main() {
         cin >> x1[i] >> x2[i];
 
         // 시작 구간 x1[i]에서 끝 구간 x2[i]까지 값을 체크
-        for (int j{ x1[i] }; j < x2[i]; j++) {
+        for (int j{ x1[i] }; j <= x2[i]; j++) {
             checked[j]++;
         }
     }
 
     int max{ 0 };
-    int max_index{ 0 };
 
     // 가장 많이 체크된 구간 찾기
     for (int i{ 0 }; i < MAX; i++) {
         if (checked[i] > max) {
             max = checked[i];
-            max_index = i;
         }
     }
 
