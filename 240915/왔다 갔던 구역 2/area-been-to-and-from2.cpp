@@ -11,13 +11,13 @@ int main() {
 	for (int i{ 0 }; i <n; i++) {
 		cin >> num >> direction;
 		if (direction == 'R') {
-			for (int j{ location+1 }; j < location + num; j++) {
+			for (int j{ location }; j < location + num; j++) {
 				arr[j]++;
 			}
 			location += num;
 		}
 		else if (direction == 'L') {
-			for (int j{ location }; j > location - num; j--) {
+			for (int j{ location-1}; j >= location - num; j--) {
 				arr[j]++;
 			}
 			location -= num;
