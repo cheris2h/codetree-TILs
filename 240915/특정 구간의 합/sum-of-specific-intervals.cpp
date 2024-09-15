@@ -14,8 +14,8 @@ int main() {
 	for (int i{ 0 }; i < m; i++) {
 		int a1, a2;
 		cin >> a1 >> a2;
-		for (int j{ arr[a1-1] }; j < arr[a2]; j++) {
-			sum[i] += j;
+		for (int j{ a1-1 }; j < a2; j++) {
+			sum[i] += arr[j];
 		}
 	}
 	for (int i{ 0 }; i < m; i++) {
